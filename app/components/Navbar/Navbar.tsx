@@ -38,17 +38,18 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
-                                    className="block h-12 w-40 lg:hidden"
-                                    src={'/assets/logo/Logo.png'}
-                                    alt="paidin-logo"
-                                />
-                                <img
-                                    className="hidden h-full w-full lg:block"
-                                    src={'/assets/logo/Logo.png'}
-                                    alt="paidin-logo"
-                                />
-                            </div>
+    <img
+        className="block h-12 w-32 lg:hidden"  // Adjust the height (h-12) and width (w-32) for small screens
+        src={'/assets/logo/Logo.png'}
+        alt="paidin-logo"
+    />
+    <img
+        className="hidden h-full w-auto lg:block max-h-12"  // Adjust the height (max-h-12) for large screens
+        src={'/assets/logo/Logo.png'}
+        alt="paidin-logo"
+    />
+</div>
+
 
                             {/* LINKS */}
 
